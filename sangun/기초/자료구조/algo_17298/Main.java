@@ -10,49 +10,34 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine());
+        Stack<Integer> stack = new Stack<>();
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-
-        Stack<Integer> right = new Stack<>();
-        Stack<Integer> left = new Stack<>();
-        Stack<Integer> result = new Stack<>();
+        int[] arr = new int[n];
+        int[] result = new int[n];
 
 
         for (int i = 0; i < n; i++) {
-            int temp = Integer.parseInt(st.nextToken());
-            left.push(temp);
+            arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        right.push(left.pop());
-        result.push(-1);
-
+        stack.push(0);
         for (int i = 1; i < n; i++) {
-            // 왼쪽 값이 오른쪽 값보다 작으면
-            if (!right.isEmpty() && left.peek() < right.peek()) {
-                result.push(right.peek());
-                right.push(left.pop());
-            } else {
-                while ( !right.isEmpty() && left.peek() >= right.peek()) {
-                    right.pop();
-                }
-                if (!right.isEmpty()) {
-                    result.push(right.peek());
-                    right.push(left.pop());
-                } else {
-                    result.push(-1);
-                    right.push(left.pop());
-                }
-
-
+            while(!stack.empty()&&arr[stack.peek()]<arr[i]){
+                result[stack.pop()] = arr[i];
             }
-
+            stack.push(i);
         }
-        for (int i = 0; i < n; i++) {
-            bw.write(result.pop() + " ");
+        while (!stack.isEmpty()){
+            result[stack.pop()] = -1;
+        }
+
+        for (int i=0;i<n;i++){
+            bw.write(result[i]+" ");
         }
         bw.flush();
         bw.close();
-
-
     }
+
+
 }

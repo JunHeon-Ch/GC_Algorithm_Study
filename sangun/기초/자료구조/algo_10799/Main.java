@@ -11,22 +11,22 @@ public class Main {
         String s = br.readLine();
 
         Stack<Integer> stack = new Stack<>();
-        int count = 0;
 
+        int result = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i)=='(')
+            if (s.charAt(i) == '(') {
                 stack.push(i);
-            else {
+            } else if (s.charAt(i) == ')') {
                 if (stack.peek() == i - 1) {
                     stack.pop();
-                    count += stack.size();
-                } else {
+                    result += stack.size();
+                }else{
                     stack.pop();
-                    count++;
+                    result+=1;
                 }
             }
         }
-        bw.write(count + "");
+        bw.write(result+"\n");
         bw.flush();
         bw.close();
     }
