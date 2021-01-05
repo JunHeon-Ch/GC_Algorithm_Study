@@ -10,23 +10,23 @@ public class Problem_1929 {
 		
 		int M = sc.nextInt();
 		int N = sc.nextInt();
-		int[] print = new int[N+1];
+		boolean [] print = new boolean[N+1];
 		print = eratosthenes(N);
 		for(int i=M; i<=N; i++)
 		{
-			if(print[i]==0) System.out.println(i);
+			if(print[i]==false) System.out.println(i);
 		}
 	}
-	public static int[] eratosthenes(int num)
+	public static boolean[] eratosthenes(int num)
 	{	
-		int[] isNotPrime = new int[num+1];
+		boolean[] isNotPrime = new boolean[num+1];
 		
-		isNotPrime[0]=1;
-		isNotPrime[1]=1;
+		isNotPrime[0]=true;
+		isNotPrime[1]=true;
 		for(int i=2; i*i<=num; i++)
 		{	
-			if(isNotPrime[i]==1) continue;
-			for(int j=i*i; j<=num; j=j+i) isNotPrime[j]=1;
+			if(isNotPrime[i]) continue;
+			for(int j=2*i; j<=num; j=j+i) isNotPrime[j]=true;
 		}
 		return isNotPrime;
 	}
