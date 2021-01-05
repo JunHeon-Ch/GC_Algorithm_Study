@@ -9,7 +9,7 @@ int pn;
 bool check[MAX + 1];
 
 void createPrimeTable() {
-    for(int i = 2; i <= sqrt(MAX); i++) {
+    for(int i = 2; i <= MAX; i++) {
         if(!check[i]) {
             prime[pn++] = i;
             for(int j = i + i; j <= MAX; j += i) {
