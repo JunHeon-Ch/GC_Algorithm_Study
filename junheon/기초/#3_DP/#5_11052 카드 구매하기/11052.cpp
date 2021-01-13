@@ -15,7 +15,6 @@ int main() {
     }
     maxP[0] = 0;
     for(int i = 1; i <= n; i++) {
-        maxP[i] = maxP[i - 1];
         for(int j = 0; j < i; j++) {
             maxP[i] = max(maxP[i], maxP[j] + p[i - j]);
         }
