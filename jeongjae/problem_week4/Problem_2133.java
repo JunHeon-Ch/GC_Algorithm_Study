@@ -1,4 +1,4 @@
-package temp;
+package problem_week4;
 
 import java.util.Scanner;
 
