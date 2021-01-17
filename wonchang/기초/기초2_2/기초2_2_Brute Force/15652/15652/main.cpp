@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  15651
+//  15652
 //
 //  Created by 이원창 on 2021/01/17.
 //
@@ -22,10 +22,12 @@ void go(){
     }
     else{
         for(int i = 1; i <= n; i++){
-            cnt++;
-            arr[cnt] = i;
-            go();
-            cnt--;
+            if(i >= arr[cnt]){
+                cnt++;
+                arr[cnt] = i;
+                go();
+                cnt--;
+            }
         }
     }
 }

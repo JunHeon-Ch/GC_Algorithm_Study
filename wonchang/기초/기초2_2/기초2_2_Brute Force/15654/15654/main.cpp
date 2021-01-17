@@ -1,31 +1,34 @@
 //
 //  main.cpp
-//  15651
+//  15654
 //
 //  Created by 이원창 on 2021/01/17.
 //
 #include <iostream>
 #include <algorithm>
+#include <vector>
 using namespace std;
 
-bool visit[9];
+bool visit[8];
 int arr[8] = {0, };
+int num[8] = {0, };
 int n = 0;
 int m = 0;
-int cnt = 0;
-void go(){
-    if(cnt == m - 1){
+void go(int cnt){
+    if(cnt == m){
         for(int i = 0; i < m; i++){
             cout << arr[i] << ' ';
         }
         cout << '\n';
     }
     else{
-        for(int i = 1; i <= n; i++){
-            cnt++;
-            arr[cnt] = i;
-            go();
-            cnt--;
+        for(int i = 0; i < n; i++){
+            if(!visit[i]){
+                arr[cnt] = num[i];
+                visit[i] = true;
+                go(cnt + 1);
+                visit[i] = false;
+            }
         }
     }
 }
@@ -33,11 +36,12 @@ void go(){
 int main(int argc, const char * argv[]) {
     cin >> n >> m;
     
-    for(int i = 1; i <= n; i++){
-        arr[cnt] = i;
-        go();
+    for(int i = 0; i < n; i++){
+        cin >> num[i];
     }
     
+    sort(num, num + n);
+    go(0);
     return 0;
 }
 
