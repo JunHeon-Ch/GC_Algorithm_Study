@@ -14,7 +14,6 @@ int ini = 0;
 long long ans = LONG_LONG_MAX;
 long long w[10][10];
 bool visit[10];
-vector<int> v;
 void go(int start, int cnt, long long sum){
     if(cnt == n - 1){
         if(w[start][ini] != 0)
