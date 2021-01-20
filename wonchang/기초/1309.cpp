@@ -1,4 +1,4 @@
-ㅋ#include <iostream>
+#include <iostream>
 
 using namespace std;
 int d[100001][3];
