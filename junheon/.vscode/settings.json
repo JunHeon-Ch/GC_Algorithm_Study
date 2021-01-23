@@ -13,6 +13,8 @@
         "sstream": "cpp",
         "type_traits": "cpp",
         "tuple": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "cmath": "cpp",
+        "cstdlib": "cpp"
     }
 }
