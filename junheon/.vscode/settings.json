@@ -16,6 +16,8 @@
         "iomanip": "cpp",
         "cmath": "cpp",
         "cstdlib": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
     }
 }
