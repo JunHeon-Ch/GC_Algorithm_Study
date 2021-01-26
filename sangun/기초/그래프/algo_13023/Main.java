@@ -46,6 +46,10 @@ public class Main {
     }
 
     public static void dfs(int start, int depth) {
+        for (int k : list[start]){
+            System.out.print(k+" ");
+        }
+        System.out.println();
         if (depth == 5) {
             ans = 1;
             return;
