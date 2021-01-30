@@ -7,7 +7,7 @@
 #include <cstring>
 
 using namespace std;
-// g -> 그래프 / check -> 몇번째 방문했는지
+// g -> 그래프 / p -> 현재 위치의 이전 위치 / o -> 입력된 순서
 vector<int> g[100000];
 int p[100000];
 int o[100000];
@@ -36,8 +36,16 @@ int main() {
     p[0] = 0;
     int k = 1;
     for(int i = 0; i < n; i++) {
+        if(q.empty()) {
+            cout << 0 << '\n';
+            return 0;
+        }
         int c = q.front();
         q.pop();
+        if(c != o[i]) {
+            cout << 0 << '\n';
+            return 0;
+        }
         int cnt = 0;
         for(int n : g[c]) {
             if(p[n] == -1) {
@@ -46,7 +54,7 @@ int main() {
             }
         }
         for(int j = 0; j < cnt; j++) {
-            if(p[o[k + j]] != c) {
+            if(p[o[k + j]] != c || k + j >= n) {
                 cout << 0 << '\n';
                 return 0;
             }
