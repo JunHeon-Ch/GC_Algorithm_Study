@@ -3,6 +3,7 @@
 #include <algorithm>
 
 using namespace std;
+// g -> 그래프 / c -> 방문했는지 체크 / ans -> 방문 순서 저장
 vector<int> g[100000];
 bool c[100000];
 int n;
@@ -30,6 +31,7 @@ int main() {
         g[u].push_back(v);
         g[v].push_back(u);
     }
+    // 입력된 결과 순서 기준으로 인접 리스트 소팅
     vector<int> b(n);
     vector<int> o(n);
     for(int i = 0; i < n; i++) {
