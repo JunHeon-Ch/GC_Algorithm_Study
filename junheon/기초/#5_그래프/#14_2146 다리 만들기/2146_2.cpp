@@ -51,6 +51,9 @@ int bfs_dist(int cnt) {
             }
         }
     }
+    // 모든 섬을 큐에 넣은 후,
+    // 다음 점이 바다라면, 인접한 섬의 그룹과 거리를 넣음
+    // 다음 점이 섬이고 현재 섬 그룹과 다르다면, 현재 섬과 다른 섬과의 거리 계산
     while(!q.empty()) {
         int x = q.front().first;
         int y = q.front().second;
