@@ -1,3 +1,5 @@
+// 인접 리스트를 이용한 dfs
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -9,6 +11,7 @@ bool c[100000];
 int n;
 vector<int> ans;
 
+// dfs를 통해 입력된 결과 순서와 같은지 비교
 void dfs(int s) {
     if(c[s]) {
         return;
@@ -23,6 +26,9 @@ void dfs(int s) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     cin >> n;
     for(int i = 0; i < n - 1; i++) {
         int u, v;
