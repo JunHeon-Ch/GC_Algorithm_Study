@@ -47,7 +47,7 @@ int main() {
         o[b[i]] = i;
     }
     for(int i = 0; i < n; i++) {
-        sort(g[i].begin(), g[i].end(), [&](const int u, const int v) {
+        sort(g[i].begin(), g[i].end(), [&](int u, int v) {
             return o[u] < o[v];
         });
     }
