@@ -5,6 +5,7 @@
 #include <cstring>
 
 using namespace std;
+// g -> 그래프 / d -> 지름
 vector<pair<int, int>> g[100000];
 int d[100000];
 
