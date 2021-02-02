@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  2148
+//  2146
 //
-//  Created by 이원창 on 2021/02/01.
+//  Created by 이원창 on 2021/02/02.
 //
 
 #include <iostream>
