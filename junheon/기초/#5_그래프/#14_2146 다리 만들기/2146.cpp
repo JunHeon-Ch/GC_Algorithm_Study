@@ -59,10 +59,12 @@ int bfs_dist(int cnt) {
                 int ny = y + dy[i];
                 if(nx >= 0 && nx < n && ny >= 0 && ny < n) {
                     if(d[nx][ny] == -1) {
+                        // 바다면, 거리 추가
                         if(c[nx][ny] == 0) {
                             d[nx][ny] = d[x][y] + 1;
                             q.push(make_pair(nx, ny));
                         }
+                        // 현재 섬이 아닌 다른 섬이면 최소값 계산
                         else {
                             if(c[nx][ny] != k) {
                                 if(ans == -1 || ans > d[x][y]) {
