@@ -1,4 +1,4 @@
-package algo_7526;
+package algo_7562;
 
 import java.io.*;
 import java.util.LinkedList;
