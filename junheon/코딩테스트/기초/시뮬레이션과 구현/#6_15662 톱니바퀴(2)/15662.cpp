@@ -20,6 +20,7 @@ int main() {
         scanf("%d %d", &n, &d);
         int left = a[n][7];
         int right = a[n][3];
+        // Number of the cog will be rotated.
         if(d == -1) {
             for(int l = 1; l <= 8; l++) {
                 a[n][l - 1] = a[n][l];
@@ -33,6 +34,7 @@ int main() {
             a[n][1] = a[n][9];
         }
         r = -d;
+        // left
         for(int j = n - 1; j >= 1; j--) {
             if(left == a[j][3]) break;
             left = a[j][7];
@@ -51,6 +53,7 @@ int main() {
             r = -r;
         }
         r = -d;
+        // right
         for(int j = n + 1; j <= t; j++) {
             if(right == a[j][7]) break;
             right = a[j][3];
