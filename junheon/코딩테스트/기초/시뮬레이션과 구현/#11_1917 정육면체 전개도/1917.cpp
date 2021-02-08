@@ -81,7 +81,7 @@ int main() {
                     }
                 }
                 if(row[i].size() == 3 && row[i - 1].size() == 2 && row[i + 1].size() == 1) {
-                    if(!(row[i + 1][0] >= row[i][0] && row[i + 1][0] <= row[i][2])) {
+                    if(row[i + 1][0] >= row[i][0] && row[i + 1][0] <= row[i][2]) {
                         if(row[i - 1][1] == row[i][0] || row[i - 1][0] == row[i][2]) {
                             flag = true;
                             break;
@@ -141,7 +141,7 @@ int main() {
                     }
                 }
                 else if(col[i].size() == 3 && col[i - 1].size() == 2 && col[i + 1].size() == 1) {
-                    if(!(col[i + 1][0] >= col[i][0] && col[i + 1][0] <= col[i][2])) {
+                    if(col[i + 1][0] >= col[i][0] && col[i + 1][0] <= col[i][2]) {
                         if(col[i - 1][1] == col[i][0] || col[i - 1][0] == col[i][2]) {
                             flag = true;
                             break;
