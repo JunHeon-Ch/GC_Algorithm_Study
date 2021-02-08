@@ -16,7 +16,7 @@ int main() {
             cin >> a[i][j];
         }
     }
-    // 회전방향 : 왼쪽, 위, 오른쪽, 아래
+    // rotation direction: left, up, right, down
     while (r--) {
         int x1 = 0;
         int y1 = 0;
