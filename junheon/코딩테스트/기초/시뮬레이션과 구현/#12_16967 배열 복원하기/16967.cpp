@@ -4,6 +4,9 @@ using namespace std;
 int a[600][600];
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     // input
     int h, w, x, y;
     cin >> h >> w >> x >> y;
