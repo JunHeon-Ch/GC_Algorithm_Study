@@ -16,7 +16,7 @@ int main() {
             cin >> a[i][j];
         }
     }
-    // 회전방향 : 왼쪽, 위, 오른쪽, 아래
+    // rotation direction: left, up, right, down
     int col = m;
     int row = n;
     int rot = 2 * (row + col - 2);
