@@ -5,6 +5,7 @@
 
 using namespace std;
 bool a[101][101];
+// E, N, W, S
 int dx[4] = {1, 0, -1, 0};
 int dy[4] = {0, -1, 0, 1};
 
