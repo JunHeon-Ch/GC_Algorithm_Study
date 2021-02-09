@@ -19,6 +19,7 @@ int main() {
     // caculate surface area
     int ans = 0;
     int sum = 0;
+    // vertical
     for(int j = 0; j < m; j++) {
         sum += a[0][j];
         for(int i = 1; i < n; i++) {
@@ -29,6 +30,7 @@ int main() {
     }
     ans += 2 * sum;
     sum = 0;
+    // horizontal
     for(int i = 0; i < n; i++) {
         sum += a[i][0];
         for(int j = 1; j < m; j++) {
@@ -36,7 +38,8 @@ int main() {
                 sum += a[i][j] - a[i][j - 1];
             }
         }
-    } 
+    }
+    // top & bottom
     ans += 2 * sum;
     sum = 0;
     for(int i = 0; i < n; i++) {
