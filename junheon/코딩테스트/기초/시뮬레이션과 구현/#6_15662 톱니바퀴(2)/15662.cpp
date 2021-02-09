@@ -4,6 +4,21 @@
 using namespace std;
 int a[1001][10];
 
+void rotateCog(int n, int d) {
+    if(d == -1) {
+        for(int l = 1; l <= 8; l++) {
+            a[n][l - 1] = a[n][l];
+        }
+        a[n][8] = a[n][0];
+    }
+    else if(d == 1) {
+        for(int l = 8; l >= 1; l--) {
+            a[n][l + 1] = a[n][l];
+        }
+        a[n][1] = a[n][9];
+    }
+}
+
 int main() {
     // input
     int t;
@@ -21,35 +36,13 @@ int main() {
         int left = a[n][7];
         int right = a[n][3];
         // Number of the cog will be rotated.
-        if(d == -1) {
-            for(int l = 1; l <= 8; l++) {
-                a[n][l - 1] = a[n][l];
-            }
-            a[n][8] = a[n][0];
-        }
-        else if(d == 1) {
-            for(int l = 8; l >= 1; l--) {
-                a[n][l + 1] = a[n][l];
-            }
-            a[n][1] = a[n][9];
-        }
+        rotateCog(n, d);
         r = -d;
         // left
         for(int j = n - 1; j >= 1; j--) {
             if(left == a[j][3]) break;
             left = a[j][7];
-            if(r == -1) {
-                for(int l = 1; l <= 8; l++) {
-                    a[j][l - 1] = a[j][l];
-                }
-                a[j][8] = a[j][0];
-            }
-            else if(r == 1) {
-                for(int l = 8; l >= 1; l--) {
-                    a[j][l + 1] = a[j][l];
-                }
-                a[j][1] = a[j][9];
-            }
+            rotateCog(j, r);
             r = -r;
         }
         r = -d;
@@ -57,18 +50,7 @@ int main() {
         for(int j = n + 1; j <= t; j++) {
             if(right == a[j][7]) break;
             right = a[j][3];
-            if(r == -1) {
-                for(int l = 1; l <= 8; l++) {
-                    a[j][l - 1] = a[j][l];
-                }
-                a[j][8] = a[j][0];
-            }
-            else if(r == 1) {
-                for(int l = 8; l >= 1; l--) {
-                    a[j][l + 1] = a[j][l];
-                }
-                a[j][1] = a[j][9];
-            }
+            rotateCog(j, r);
             r = -r;
         }
     }
