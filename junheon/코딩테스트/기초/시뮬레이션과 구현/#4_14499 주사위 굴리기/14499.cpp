@@ -2,6 +2,7 @@
 
 using namespace std;
 int a[20][20];
+// 0 -> bottom / 1 -> back / 2 -> front / 3 -> top / 4 -> right / 5 -> left
 int dVal[6];
 
 int main() {
