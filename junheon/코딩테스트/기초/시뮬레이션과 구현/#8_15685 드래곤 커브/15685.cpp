@@ -25,7 +25,9 @@ int main() {
         for(int j = 0; j < g; j++) {
             int size = point.size();
             for(int k = 0; k < size; k++) {
-                // rotate 90 => (a, b) -> (-b, a) 
+                // move to (0, 0) based end point
+                // rotate 90 => (a, b) -> (-b, a)
+                // move to origin point
                 nx = point[k].first;
                 ny = point[k].second;
                 nx -= ex; ny -= ey;
