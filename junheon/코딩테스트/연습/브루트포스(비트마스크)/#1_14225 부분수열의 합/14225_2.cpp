@@ -4,31 +4,27 @@
 
 using namespace std;
 int a[20];
-int n;
-int res = 0;
-
-void go(int selected, int sum) {
-    // escape condition
-    if(selected == n) {
-        res = res | (1 << sum);
-        return;
-    }
-    // select
-    go(selected + 1, sum + a[selected]);
-    // not select
-    go(selected + 1, sum);
-}
 
 int main() {
+    int n;
+    int res = 0;
     // input
     cin >> n;
     for(int i = 0; i < n; i++) {
         cin >> a[i];
     }
 
-    go(0, 0);
+    // bitmask
+    for(int i = 0; i < (1 << n); i++) {
+        int sum = 0;
+        for(int j = 0; j < n; j++) {
+            if(i & (1 << j)) sum += a[j];
+        }
+        res = res | (1 << sum);
+    }
     int ans = 0;
     while(res & (1 << ans)) ans++;
+
 
     // output
     cout << ans << '\n';
