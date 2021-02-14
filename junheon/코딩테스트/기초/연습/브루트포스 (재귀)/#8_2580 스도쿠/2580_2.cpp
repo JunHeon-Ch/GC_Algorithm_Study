@@ -3,8 +3,11 @@
 
 using namespace std;
 int a[9][9];
+// Whether a number is included in the horizontal
 bool check_w[9][10];
+// Whether a number is included in the vertical
 bool check_h[9][10];
+// Whether a number is included in the 3*3 area
 bool check_3x3[9][10];
 vector<pair<int, int>> v;
 
