@@ -6,8 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/기초/수학" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/기초/자료구조" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/기초/다이나믹프로그래밍/algo_9095" />
-      <excludeFolder url="file://$MODULE_DIR$/코딩테스트/연습/브루트포스(재귀)/algo_14500" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
