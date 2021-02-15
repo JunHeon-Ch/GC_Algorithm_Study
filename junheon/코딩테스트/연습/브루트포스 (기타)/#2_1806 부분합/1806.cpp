@@ -15,7 +15,7 @@ int main() {
     }
 
     int front = 0, rear = 0;
-    int sum = 0, ans = n;
+    int sum = 0, ans = n + 1;
     while(true) {
         if(sum >= s) {
             sum -= a[front++];
@@ -32,6 +32,11 @@ int main() {
     }
 
     // output
-    cout << ans << '\n';
+    if(ans == n + 1) {
+        cout << 0 << '\n';
+    }
+    else {
+        cout << ans << '\n';
+    }
     return 0;
 }
