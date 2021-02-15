@@ -3,7 +3,7 @@
 
 using namespace std;
 int a[20];
-bool c[20];
+bool c[2000001];
 
 int main() {
     int n;
@@ -23,7 +23,7 @@ int main() {
         c[sum] = true;
     }
     int i;
-    for(i = 0; i < 20; i++) {
+    for(i = 0; i <= 2000000; i++) {
         if(!c[i]) break;
     }
 
