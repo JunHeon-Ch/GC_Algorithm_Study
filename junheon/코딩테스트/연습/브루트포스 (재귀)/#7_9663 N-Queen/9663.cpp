@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+// index -> row / queen[index] -> column
 int queen[15];
 int n;
 int ans = 0;
