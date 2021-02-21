@@ -66,7 +66,7 @@ public class Main {
 
 
     }
-
+//
     static void go(int end, long[] arr, ArrayList<Long> list) {
         for (int i = 0; i < end; i++) {
             long sum = 0;
