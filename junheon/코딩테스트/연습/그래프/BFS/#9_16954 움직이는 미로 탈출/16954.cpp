@@ -13,13 +13,13 @@ bool bfs() {
     c[7][0] = true;
     while(!q.empty()) {
         int size = q.size();
-        // 캐릭터 이동
+        // move character
         while(size--) {
             int x = q.front().first;
             int y = q.front().second;
             q.pop();
             if(x == 0 && y == 7) return true;
-            // 움직이지 않기
+            // don't move character
             if(a[x - 1][y] != '#') {                
                 q.push(make_pair(x, y));
             }
@@ -27,7 +27,7 @@ bool bfs() {
                 int nx = x + dx[i];
                 int ny = y + dy[i];
                 if(nx < 0 || nx >= 8 || ny < 0 || ny >= 8) continue;
-                // 이동할 위치의 위에 벽이 있으면 안됨
+                // There should be no wall above the location to move
                 if(a[nx - 1][ny] == '#') continue;
                 if(a[nx][ny] == '.') {
                     if(c[nx][ny]) continue;
@@ -36,7 +36,7 @@ bool bfs() {
                 }
             }
         }
-        // 벽 이동
+        // move wall
         for(int i = 7; i >= 0; i--) {
             for(int j = 0; j < 8; j++) {
                 if(i == 0) a[i][j] = '.';
