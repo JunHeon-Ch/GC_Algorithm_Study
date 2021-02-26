@@ -21,7 +21,7 @@ int main() {
             return 0;
         }
         int nx = x + u;
-        if(nx <= 1000000 && c[nx] == -1) {
+        if(nx <= f && c[nx] == -1) {
             c[nx] = c[x] + 1;
             q.push(nx);
         }
