@@ -27,6 +27,7 @@ int bfs(int s, int e) {
         q.pop();
         if(s == e) return c[s];
         // 1의 자리부터 1000의 자리까지 모든 숫자를 바꿔보면서 소수인지 확인
+        // Change every number from 1 to 1000 to see if it's a prime number.
         for(int i = 1; i <= 1000; i *= 10) {
             for(int j = 0; j < 10; j++) {
                 if(i == 1000 && j == 0) continue;
