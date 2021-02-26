@@ -57,6 +57,7 @@ int main() {
                 else {
                     cin >> a[i][j];
                     // 죄수 위치부터 출발하는 경우
+                    // Departure from the position of the prisoner.
                     if(a[i][j] == '$') {
                         q.push_back({i, j, idx});
                         c[i][j][idx] = 0;
@@ -66,6 +67,7 @@ int main() {
             }
         }
         // 밖에서 출발하는 경우
+        // Departure from outside
         q.push_back({0, 0, idx});
         c[0][0][idx] = 0;
         
@@ -73,6 +75,8 @@ int main() {
         
         // 3가지 경우의 합 중 최소값을 찾는다
         // 만나는 지점이 문일 경우 -2
+        // Find the minimum of the three cases.
+        // If the contact point is a door, result-2
         int ans = -1;
         for(int i = 1; i <= h; i++) {
             for(int j = 1; j <= w; j++) {
