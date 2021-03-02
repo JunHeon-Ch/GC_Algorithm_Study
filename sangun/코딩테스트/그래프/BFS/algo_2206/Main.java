@@ -70,7 +70,7 @@ public class Main {
                 int ny = y + dy[i];
                 if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
 
-                // 공사를 최소로 한 것을 선택
+                // 공사를 최소로 한 것을 선택 + 지나왔던길 제거
                 if (visit[nx][ny] <= temp.broken) continue;
 
                 if (map[nx][ny] != 0) { // 벽일때
