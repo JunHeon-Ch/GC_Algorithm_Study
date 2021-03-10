@@ -39,13 +39,11 @@ int bfs(vector<pair<int, int>> &v) {
     for(int i = 0; i < n; i++) {
         for(int j = 0 ; j < n; j++) {
             if(a[i][j] == 1) continue;
-            if(d[i][j] == -1) return;
+            if(d[i][j] == -1) return -1;
             res = max(res, d[i][j]);
         }
     }
-    if(ans == -1 || ans > res) {
-        ans = res;
-    }
+    return res;
 }
 
 // 3개의 바이러스를 두는 경우
@@ -53,7 +51,13 @@ int bfs(vector<pair<int, int>> &v) {
 void go(vector<pair<int, int>> &v, int index, int selected) {
     if(selected == m) {
         memset(d, -1, sizeof(d));
-        bfs(v);
+        int res = bfs(v);
+        if(res != -1) {            
+            if(ans == -1 || ans > res) {
+                ans = res;
+            }
+            return;
+        }
     }
     if(index >= v.size()) return;
     c[index] = true;
