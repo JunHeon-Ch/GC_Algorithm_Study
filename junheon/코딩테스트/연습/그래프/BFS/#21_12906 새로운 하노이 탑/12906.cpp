@@ -41,7 +41,8 @@ int main() {
             s[i] = "";
         }
     }
-    // A, B, C °¢°¢ °¹¼ö Ã£±â
+    // A, B, C °¹¼ö Ã£±â
+    // Find the number of A, B, and C
     int cnt[3] = {0, };
     for(int i = 0; i < 3; i++) {
         for(int j = 0; j < s[i].length(); j++) {
