@@ -4,6 +4,9 @@ using namespace std;
 int d[1001];
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int n, m, x;
     cin >> n >> m;
     while(n--) {
