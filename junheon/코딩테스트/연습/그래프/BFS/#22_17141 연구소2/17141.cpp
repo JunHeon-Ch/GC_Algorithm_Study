@@ -46,8 +46,8 @@ int bfs(vector<pair<int, int>> &v) {
     return res;
 }
 
-// 3개의 바이러스를 두는 경우
-// Number of cases where 3 viruses are placed
+// m개의 바이러스를 두는 경우
+// Number of cases where m viruses are placed
 void go(vector<pair<int, int>> &v, int index, int selected) {
     if(selected == m) {
         memset(d, -1, sizeof(d));
