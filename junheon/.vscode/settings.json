@@ -19,6 +19,7 @@
         "limits": "cpp",
         "initializer_list": "cpp",
         "utility": "cpp",
-        "exception": "cpp"
+        "exception": "cpp",
+        "set": "cpp"
     }
 }
