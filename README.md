@@ -8,4 +8,4 @@
 * 예시
 ![](https://github.com/JunHeon-Ch/BOJ_Study/blob/main/example.PNG)
 [![Solved.ac
-프로필](http://mazassumnida.wtf/api/generate_badge?boj={chjh121})](https://solved.ac/{chjh121})
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={chjh121})](https://solved.ac/{chjh121})
