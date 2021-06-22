@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e4247ab-db73-4769-9d36-e09e0bfc04b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/브루트포스-재귀.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_1182_부분수열의합.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_6603_로또.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_크레인인형뽑기게임.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_키패드누르기.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/.idea/브루트포스-재귀.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/_1182_부분수열의합.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/_6603_로또.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/_크레인인형뽑기게임.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/브루트포스-재귀/_키패드누르기.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/DP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_10422/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_10942/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_10942/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_11048/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_11058/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_11060/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_11066/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_12865/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_12869/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_1495/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_15989/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_2293/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_2294/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_5557/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_5582/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/algo_9251/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/DP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_10422/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_10942/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_10942/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_11048/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_11058/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_11060/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_11066/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_12865/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_12869/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_1495/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_15989/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_2293/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_2294/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_5557/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_5582/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/DP/out/production/DP/algo_9251/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/.idea/그래프.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_10026/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_12886/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_12906/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_12906/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_14395/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_14442/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_14502/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_1600/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_16236/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_16928/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_16933/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_16946/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_16948/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_16954/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_17086/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_17141/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_17142/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_1963/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_2206/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_2234/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_4991/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_5014/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_6087/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_9376/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/BFS/algo_9376/Main_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_10026/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_10026/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_12886/Main$stone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_12886/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_12906/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_12906/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_12946/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_14395/Main$value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_14395/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_14442/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_14442/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_14502/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_14502/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_1600/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_1600/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16236/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16236/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16928/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16933/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16933/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16946/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16946/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16948/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16948/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16954/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_16954/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_17086/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_17086/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_17141/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_17141/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_17142/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_17142/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_1963/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_2206/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_2206/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_2234/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_2234/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_4991/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_4991/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_5014/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_6087/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_6087/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_9376/Main$dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_9376/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_9376/Main_2$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/out/production/그래프/algo_9376/Main_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/그래프/그래프/algo_12946/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/.idea/시뮬레이션.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/algo_16234/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/algo_16235/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/algo_17140/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/algo_17143/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/algo_17144/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/algo_17780/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/.idea/시뮬레이션.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_16234/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_16234/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_16235/Main$tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_16235/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17140/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17140/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17143/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17143/Main$Tuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17143/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17144/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17780/Main$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17780/Main$chess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코딩테스트/시뮬레이션/out/production/시뮬레이션/algo_17780/Main.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1uHzP6Ip7VCZJMFFwlYZ7l1g413" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application._크레인인형뽑기게임">
+    <configuration name="_키패드누르기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_키패드누르기" />
+      <module name="브루트포스-재귀" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1182_부분수열의합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1182_부분수열의합" />
+      <module name="브루트포스-재귀" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_크레인인형뽑기게임" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_크레인인형뽑기게임" />
+      <module name="브루트포스-재귀" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_6603_로또" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_6603_로또" />
+      <module name="브루트포스-재귀" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_크레인인형뽑기게임" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_크레인인형뽑기게임" />
+      <module name="브루트포스-재귀" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application._크레인인형뽑기게임" />
+        <item itemvalue="Application._키패드누르기" />
+        <item itemvalue="Application._1182_부분수열의합" />
+        <item itemvalue="Application._6603_로또" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e4247ab-db73-4769-9d36-e09e0bfc04b8" name="Default Changelist" comment="" />
+      <created>1624337277016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624337277016</updated>
+      <workItem from="1624337278553" duration="7276000" />
+      <workItem from="1624359666019" duration="1725000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
