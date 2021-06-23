@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/DP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/브루트포스(기타)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/브루트포스(비트마스크)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/브루트포스(순열)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/브루트포스(재귀)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/시뮬레이션" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
