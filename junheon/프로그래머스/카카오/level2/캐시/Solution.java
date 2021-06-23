@@ -9,7 +9,10 @@ class Solution {
         int t = 0;
         for(String city : cities) {
             city = city.toLowerCase();
-            if(queue.contains(city)) t++;
+            if(queue.contains(city)) {
+                t++;
+                queue.add(queue.poll());
+            }
             else {
                 t += 5;
                 queue.add(city);
