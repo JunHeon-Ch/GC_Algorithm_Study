@@ -1,4 +1,4 @@
-//package 프로그래머스.카카오.level2.방금그곡;
+package 프로그래머스.카카오.level2.방금그곡;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;
