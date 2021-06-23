@@ -11,7 +11,8 @@ class Solution {
             city = city.toLowerCase();
             if(queue.contains(city)) {
                 t++;
-                queue.add(queue.poll());
+                queue.remove(city);
+                queue.add(city);
             }
             else {
                 t += 5;
