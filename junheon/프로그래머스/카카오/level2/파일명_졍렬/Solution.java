@@ -2,7 +2,6 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 class File {
     public int id;
@@ -15,16 +14,6 @@ class File {
         this.head = head;
         this.number = number;
         this.tail = tail;
-    }
-
-    @Override
-    public String toString() {
-        return "File{" +
-                "id=" + id +
-                ", head='" + head + '\'' +
-                ", number=" + number +
-                ", tail='" + tail + '\'' +
-                '}';
     }
 }
 
@@ -57,10 +46,6 @@ class Solution {
             if (k != file.length()) tail = file.substring(k);
 
             fileList.add(new File(i, head, number, tail));
-        }
-
-        for (File f : fileList) {
-            System.out.println(f);
         }
 
         Collections.sort(fileList, (o1, o2) -> {
