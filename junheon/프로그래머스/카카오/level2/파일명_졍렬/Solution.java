@@ -1,4 +1,4 @@
-//package 프로그래머스.카카오.level2.파일명_졍렬;
+package 프로그래머스.카카오.level2.파일명_졍렬;
 
 import java.util.ArrayList;
 import java.util.Collections;
