@@ -37,7 +37,7 @@ public class _문자열압축 {
             answer = Math.min(answer, str.length());
 
         }
-    
+
         System.out.println(answer);
     }
 }
