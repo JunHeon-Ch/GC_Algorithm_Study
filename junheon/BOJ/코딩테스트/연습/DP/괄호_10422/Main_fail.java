@@ -4,7 +4,7 @@ package BOJ.코딩테스트.연습.DP.괄호_10422;
 
 import java.io.*;
 
-public class Main1 {
+public class Main_fail {
 
     static final int MOD = 1000000007;
     static int[][] d = new int[5001][2501];
