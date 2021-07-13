@@ -41,7 +41,7 @@ public class Main {
                 int y = temp.y + dy[i];
                 if (x >= 0 && x < l && y >= 0 && y < l) {
                     if (map[x][y] == 0) {
-                        map[x][y] = map[temp.x][temp.y]+1;
+                        map[x][y] = map[temp.x][temp.y] + 1;
                         q.add(new dot(x, y));
                     }
                 }

@@ -9,7 +9,7 @@ public class Main {
 
         int n = sc.nextInt();
 
-        System.out.println(n/5+n/25+n/125);
+        System.out.println(n / 5 + n / 25 + n / 125);
 
     }
 

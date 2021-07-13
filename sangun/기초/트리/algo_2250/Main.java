@@ -64,12 +64,13 @@ public class Main {
 
 
     }
+
     // depth++ 하면 답이 달라짐 이유가?
     static void inorder(int x, int depth) {
         if (x == -1) return;
-        inorder(tree[x].left, depth+1);
+        inorder(tree[x].left, depth + 1);
         tree[x].order = ++order;
         tree[x].depth = depth;
-        inorder(tree[x].right, depth+1);
+        inorder(tree[x].right, depth + 1);
     }
 }
