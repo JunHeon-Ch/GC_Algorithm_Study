@@ -68,7 +68,7 @@ public class Main {
                 if (visited[k.node] == false) {
                     dist[k.node] = dist[x] + k.weight;
                     q.offer(k.node);
-                    visited[k.node]=true;
+                    visited[k.node] = true;
                 }
             }
         }

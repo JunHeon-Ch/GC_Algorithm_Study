@@ -21,10 +21,10 @@ public class Main {
                 arr[j] = Integer.parseInt(st.nextToken());
             }
 
-            double result=0;
+            double result = 0;
             for (int j = 0; j < k; j++) {
-                for (int z = j+1; z < k; z++) {
-                    result+= GCD(arr[j],arr[z]);
+                for (int z = j + 1; z < k; z++) {
+                    result += GCD(arr[j], arr[z]);
                 }
             }
             bw.write(String.format("%.0f\n", result));

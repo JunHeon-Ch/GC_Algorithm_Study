@@ -34,7 +34,7 @@ public class Main {
             for (int j = 0; j < m; j++) {
                 if (map[i][j] == 0) {
                     max = -1;
-                    check=true;
+                    check = true;
                     break;
                 }
                 if (map[i][j] > max) max = map[i][j];
@@ -43,7 +43,7 @@ public class Main {
             if (check) break;
         }
         if (max != -1) max--;
-        bw.write(max+"\n");
+        bw.write(max + "\n");
         bw.close();
 
     }

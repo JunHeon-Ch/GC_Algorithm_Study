@@ -34,7 +34,7 @@ public class Main {
                 stack.push(total % b);
                 total /= b;
             }
-            while (!stack.isEmpty()){
+            while (!stack.isEmpty()) {
                 System.out.print(stack.pop() + " ");
             }
         }

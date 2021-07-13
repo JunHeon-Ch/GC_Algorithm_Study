@@ -15,6 +15,7 @@ public class Main {
             this.c = c;
         }
     }
+
     static int[][] visited;
     static Queue<Node> q;
 
