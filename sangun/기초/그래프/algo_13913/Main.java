@@ -13,6 +13,7 @@ public class Main {
     static ArrayList<Integer> seq = new ArrayList<>();
     static int[] from;
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,10 +29,10 @@ public class Main {
     }
 
     static void print(int n, int s) throws IOException {
-        if (n!=s){
-            print(n,from[s]);
+        if (n != s) {
+            print(n, from[s]);
         }
-        bw.write(s+" ");
+        bw.write(s + " ");
     }
 
     static void bfs(int n, int k) throws IOException {
@@ -44,8 +45,8 @@ public class Main {
                 int x = q.poll();
                 int x1;
                 if (x == k) {
-                    bw.write(cnt+"\n");
-                    print(n,k);
+                    bw.write(cnt + "\n");
+                    print(n, k);
                     return;
                 }
 

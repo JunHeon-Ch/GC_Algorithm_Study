@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] nums = new int[n+1];
+        int[] nums = new int[n + 1];
 
         int[] arr = new int[1001];
         arr[1] = 1;

@@ -18,7 +18,7 @@ public class Main {
         int n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
         bfs(n, k);
-        bw.write(visited[k]-1+"\n");
+        bw.write(visited[k] - 1 + "\n");
         bw.close();
 
 
@@ -40,20 +40,18 @@ public class Main {
                     if (x1 > 100000) continue;
                     if (x1 < 0) continue;
                     if (dx[j] == 0) {
-                        if (visited[x1]==0){
-                            visited[x1]=visited[x];
+                        if (visited[x1] == 0) {
+                            visited[x1] = visited[x];
                             q.offer(x1);
-                        }
-                        else if (visited[x1] > visited[x]) {
+                        } else if (visited[x1] > visited[x]) {
                             visited[x1] = visited[x];
                             q.offer(x1);
                         }
                     } else {
-                        if (visited[x1]==0){
+                        if (visited[x1] == 0) {
                             visited[x1] = visited[x] + 1;
                             q.offer(x1);
-                        }
-                        else if (visited[x1] > visited[x] + 1) {
+                        } else if (visited[x1] > visited[x] + 1) {
                             visited[x1] = visited[x] + 1;
                             q.offer(x1);
                         }
