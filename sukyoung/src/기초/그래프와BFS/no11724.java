@@ -18,10 +18,9 @@ public class no11724 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-        start = Integer.parseInt(st.nextToken());
 
         graph = new ArrayList[n+1];
-        for (int i = 1; i < n + 1; i++) {
+        for (int i = 1; i <= n; i++) {
             graph[i] = new ArrayList<Integer>();
         }
 
@@ -35,13 +34,16 @@ public class no11724 {
         }
         for(int i=1; i<n+1; i++)
             Collections.sort(graph[i]);
-        visit = new boolean[n+1];
-        DFS(start);
-        System.out.println();
 
         visit = new boolean[n+1];
-        BFS(start);
-        System.out.println();
+        cnt = 0;
+        for(int i = 1; i <= n; i++) {
+            if(!visit[i]) { // 방문한 적 없는 노드라면 dfs.
+                DFS(i);
+                cnt++;
+            }
+        }
+        System.out.println(cnt);
     }
     public static void DFS(int node){
         if(visit[node]) {
@@ -49,26 +51,9 @@ public class no11724 {
         }
 
         visit[node] = true;
-        System.out.print(node + " ");
         for(int y: graph[node]){
-            if(!visit[y])
+            if(!visit[y]) {
                 DFS(y);
-        }
-
-    }
-    public static void BFS(int node){
-        Queue<Integer> queue = new LinkedList<Integer>();
-        queue.add(start);
-        visit[start] = true;
-
-        while (!queue.isEmpty()) {
-            int x = queue.poll();
-            System.out.print(x + " ");
-            for (int y : graph[x]) {
-                if (!visit[y]) {
-                    visit[y] = true;
-                    queue.add(y);
-                }
             }
         }
     }
