@@ -3,6 +3,7 @@ package BOJ.코딩테스트.문제.브루트포스.주사위_윷놀이_17825;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -11,16 +12,15 @@ public class Main {
     static int[] lineup;
     static int[] board = new int[44];
     static int ans = 0;
+    static int[] pos = new int[4];
+    static boolean[] finish = new boolean[4];
+    static boolean[] exist = new boolean[44];
 
     public static int game() {
-        String str = new String();
-        for(int i = 0; i < 10; i++) {
-            str += lineup[i];
-        }
+        Arrays.fill(pos, 0);
+        Arrays.fill(finish, false);
+        Arrays.fill(exist, false);
 
-        int[] pos = new int[4];
-        boolean[] finish = new boolean[4];
-        boolean[] exist = new boolean[44];
         int res = 0;
         int i;
         for (i = 0; i < 10; i++) {
