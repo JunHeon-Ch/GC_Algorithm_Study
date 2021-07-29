@@ -34,23 +34,22 @@ public class no13549 {
                 System.out.println(seek[now]);
                 return;
             }
-            int tmp = now * 2;
-            while(tmp <= 100000 && seek[tmp] == -1) {
-                seek[tmp] = seek[now];
-                queue.add(tmp);
-                tmp *= 2;
-            }
-
-            for(int i=0; i<2; i++) {
+            for(int i=0; i<3; i++) {
                 int next;
                 if(i == 0)
+                    next = now * 2;
+                else if(i == 1)
                     next = now - 1;
                 else
                     next = now + 1;
+
                 if(0 <= next && next <= 100000) {
                     if(seek[next] == -1) {
                         queue.add(next);
-                        seek[next] = seek[now] + 1;
+                        if(i == 0)
+                            seek[next] = seek[now];
+                        else
+                            seek[next] = seek[now] + 1;
                     }
                 }
             }
