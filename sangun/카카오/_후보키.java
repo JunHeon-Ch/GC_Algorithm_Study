@@ -1,11 +1,18 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
+
+import static java.lang.Integer.parseInt;
 
 public class _후보키 {
     static ArrayList<HashSet<Integer>> candidateKey;
 
     public static void main(String[] args) {
+        Date iat = new Date( parseInt("1627124005") * 1000 );
+        System.out.println(iat);
+        Date exp = new Date( parseInt("1627127605") * 1000 );
+        System.out.println(exp);
         String[][] relation = {
                 {"100", "ryan", "music", "2"},
                 {"200", "apeach", "math", "2"},
