@@ -1,4 +1,4 @@
-package Codility.Lessons.OddOccurentInArray;
+package Codility.Lessons.Lesson_2_Arrays.OddOccurentInArray;
 
 import java.util.*;
 
