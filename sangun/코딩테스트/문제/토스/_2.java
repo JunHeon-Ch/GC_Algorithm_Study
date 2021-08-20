@@ -1,61 +1,49 @@
 package 토스;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class _2 {
     public static void main(String[] args) {
-        int servers = 2;
-        boolean sticky = true;
-        int[] requests = {1,2,2,3,4,1};
 
+        String[] gems = {"DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"};
 
-        HashSet<Integer>[] server = new HashSet[servers];
-        ArrayList<Integer>[] result = new ArrayList[servers];
-        for (int i = 0; i < servers; i++) {
-            server[i] = new HashSet<>();
-            result[i] = new ArrayList<>();
-        }
+        int[] answer = new int[2];
+        HashSet<String> set = new HashSet<>(Arrays.asList(gems));
+        int len = set.size();
 
-        if (sticky) {
-            for (int i = 0; i < requests.length; i++) {
-                int k = -1;
-                boolean chk = false;
-                int minSize = Integer.MAX_VALUE;
-                for (int j = 0; j < servers; j++) {
-                    if (server[j].contains(requests[i])) {
-                        result[j].add(requests[i]);
-                        k = j;
-                        chk = true;
-                    }
-                    if (minSize > server[j].size()) {
-                        minSize = server[j].size();
-                        k = j;
+        Map<String, Integer> map = new HashMap<>();
+        int start = 0;
+        int end = 0;
+        int shortest = Integer.MAX_VALUE;
+
+        while (end < gems.length) {
+            if (!map.containsKey(gems[end])) {
+                map.put(gems[end], 1);
+            } else {
+                map.put(gems[end], map.get(gems[end]) + 1);
+            }
+
+            end++;
+
+            if (map.size() == len) {
+                while (start < end) {
+                    if (map.get(gems[start]) > 1) {
+                        map.put(gems[start], map.get(gems[start]) - 1);
+                        start++;
+                    } else if (shortest > end - start) {
+                        shortest = end - start;
+                        answer[0] = start + 1;
+                        answer[1] = end;
+                    } else {
+                        break;
                     }
                 }
-                if (!chk) {
-                    server[k].add(requests[i]);
-                    result[k].add(requests[i]);
-                }
-            }
-
-        } else {
-            int num = 0;
-            for (int i = 0; i < requests.length; i++) {
-                if (num >= servers) num = 0;
-//                server[num].add(requests[i]);
-                result[num].add(requests[i]);
-                num++;
             }
         }
-        int[][] answer = new int[servers][requests.length];
+        System.out.println(Arrays.toString(answer));
 
-        for (int i = 0; i < servers; i++) {
-            for (int j = 0; j < result[i].size(); j++) {
-                answer[i][j] = result[i].get(j);
-            }
-        }
-        System.out.println(Arrays.toString(result));
     }
 }
