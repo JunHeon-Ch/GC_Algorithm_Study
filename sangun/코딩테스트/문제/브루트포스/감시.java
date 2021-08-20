@@ -43,7 +43,6 @@ public class 감시 {
         }
         int[][] temp = new int[n][m];
         copy(temp, board);
-
         Pair p = s.get(index);
         if (p.z == 1) {
             for (int i = 0; i < 4; i++) {
