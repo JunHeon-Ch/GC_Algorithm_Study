@@ -1,40 +1,46 @@
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedList;
 
 public class 보석쇼핑 {
     public static void main(String[] args) {
-        String[] gems = {"ZZZ", "YYY", "NNNN", "YYY", "BBB"};
+        String[] gems = {"DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"};
 
         int[] answer = new int[2];
         HashSet<String> set = new HashSet<>(Arrays.asList(gems));
-        LinkedList<String> q = new LinkedList<>();
+
+        HashMap<String, Integer> map = new HashMap<>();
+
         int start = 0;
         int end = 0;
-        for (int i = 0; i < gems.length; i++) {
-            if (!q.isEmpty() && q.peek().equals(gems[i])) {
-                q.remove(0);
-                start++;
-            }
-            q.add(gems[i]);
-            end++;
-            while (q.size() > 1 && q.peek().equals(q.get(1))) {
-                q.remove(0);
-                start++;
-            }
-            boolean valid = false;
-            for (String k : set) {
-                if (!q.contains(k)) {
-                    valid = true;
-                    break;
-                }
-            }
-            if (!valid) {
-                System.out.println(start+1 + " " + end);
-                System.out.println(q);
-                return;
+        int len = set.size();
+        int shortest = gems.length + 1;
+
+        while (end < gems.length) {
+            if (!map.containsKey(gems[end])) {
+                map.put(gems[end], 1);
+            } else {
+                map.put(gems[end], map.get(gems[end]) + 1);
             }
 
+            end++;
+
+            if (map.size() == len) {
+                while (start < end) {
+                    if (map.get(gems[start]) > 1) {
+                        map.put(gems[start], map.get(gems[start]) - 1);
+                        start++;
+                    } else if (shortest > end - start) {
+                        shortest = end - start;
+                        answer[0] = start + 1;
+                        answer[1] = end;
+                        break;
+                    } else break;
+                }
+            }
         }
+        System.out.println(Arrays.toString(answer));
+
+
     }
 }
