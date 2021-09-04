@@ -5,31 +5,23 @@ public class 입국심사 {
         int n = 6;
         int[] times = {7, 10};
 
-        long answer = 0;
-
-        Arrays.sort(times);
-
+        int answer = 0;
         long left = 0;
-        long right = (long) times[times.length - 1] * n;
-
-
+        long right = 1000000000;
+        Arrays.sort(times);
         while (left <= right) {
             long mid = (left + right) / 2;
-            long sum = 0;
-
+            long total = 0;
             for (int i = 0; i < times.length; i++) {
-                sum += mid / times[i];
+                total += mid / times[i];
             }
-
-            if (sum < n) {
-                left = mid + 1;
-            } else {
+            if (total >= n) {
                 right = mid - 1;
-                answer = mid;
+                answer = (int) mid;
+            } else {
+                left = mid + 1;
             }
         }
         System.out.println(answer);
-
-
     }
 }
