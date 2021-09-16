@@ -15,6 +15,10 @@ class Solution {
             max--;
             ans++;
         }
+        Map<Character, Integer> map = new HashMap<>();
+        Set<Character> characters = map.keySet();
+        Queue<Integer> pq = new PriorityQueue<>();
+
         return ans;
     }
 }
