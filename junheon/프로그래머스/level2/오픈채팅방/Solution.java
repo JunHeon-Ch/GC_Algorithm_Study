@@ -1,4 +1,4 @@
-package 프로그래머스.카카오.level2.오픈채팅방;
+package 프로그래머스.level2.오픈채팅방;
 
 import java.util.HashMap;
 

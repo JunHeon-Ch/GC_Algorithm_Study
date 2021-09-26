@@ -1,4 +1,4 @@
-package 프로그래머스.카카오.level2.후보키.비트마스크;
+package 프로그래머스.level2.후보키.비트마스크;
 
 import java.util.ArrayList;
 

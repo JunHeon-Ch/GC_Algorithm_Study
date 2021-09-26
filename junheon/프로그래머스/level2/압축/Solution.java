@@ -1,4 +1,4 @@
-package 프로그래머스.카카오.level2.압축;
+package 프로그래머스.level2.압축;
 
 import java.util.ArrayList;
 import java.util.HashMap;

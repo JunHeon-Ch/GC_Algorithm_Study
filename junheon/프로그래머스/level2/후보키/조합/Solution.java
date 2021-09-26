@@ -1,8 +1,8 @@
-package 프로그래머스.카카오.level2.후보키.조합;// 조합
+package 프로그래머스.level2.후보키.조합;// 조합
 
 // 최소성 확인 후 유일성 확인
 
-//package 프로그래머스.카카오.level2.후보키;
+//package 프로그래머스.level2.후보키;
 
 import java.util.ArrayList;
 

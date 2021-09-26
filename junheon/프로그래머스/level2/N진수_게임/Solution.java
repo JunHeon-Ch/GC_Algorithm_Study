@@ -1,4 +1,4 @@
-package 프로그래머스.카카오.level2.N진수_게임;
+package 프로그래머스.level2.N진수_게임;
 
 class Solution {
 

@@ -1,4 +1,4 @@
-package 프로그래머스.카카오.level2.캐시;
+package 프로그래머스.level2.캐시;
 
 import java.util.LinkedList;
 import java.util.Queue;
