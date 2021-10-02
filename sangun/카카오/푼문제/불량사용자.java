@@ -1,8 +1,6 @@
 package 푼문제;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
+import java.util.*;
 
 public class 불량사용자 {
     static int ans = 0;
@@ -28,7 +26,6 @@ public class 불량사용자 {
             }
             return;
         }
-
         for (int i = 0; i < user_id.length; i++) {
             if (visited[i]) continue;
             if (valid(banned_id[index], user_id[i])) {
