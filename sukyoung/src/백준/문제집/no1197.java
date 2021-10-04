@@ -1,4 +1,4 @@
-package 백준.문제집;
+rpackage 백준.문제집;
 
 import java.io.BufferedReader;
 import java.io.IOException;
