@@ -1,5 +1,8 @@
 package 푼문제;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class 등굣길 {
     public static void main(String[] args) {
         int m = 4;
@@ -26,7 +29,7 @@ public class 등굣길 {
             }
         }
 
-
+        System.out.println(Arrays.toString(map[n]));
         System.out.println(map[n][m]);
     }
 
