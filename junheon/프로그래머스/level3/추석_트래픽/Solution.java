@@ -2,51 +2,34 @@ package 프로그래머스.level3.추석_트래픽;
 
 import java.util.*;
 
+// 누적합 풀이
 class Solution {
     public int solution(String[] lines) {
-        List<Time> list = new ArrayList<>();
-        for(String line : lines) {
+        // 최대 시간으로 사이즈 설정
+        int[] acc = new int[3600 * 1000 * 24 + 1];
+        for (String line : lines) {
             line = line.replace("2016-09-15 ", "");
+            line = line.replace("s", "");
             StringTokenizer st = new StringTokenizer(line);
             String time = st.nextToken();
-            int dur = (int) (Double.parseDouble(st.nextToken().replace("s", "")) * 1000) - 1;
+            int dur = (int) (Double.parseDouble(st.nextToken()) * 1000);
             st = new StringTokenizer(time, ":");
-            int endTime = (int) ((Double.parseDouble(st.nextToken()) * 3600
-                    + Double.parseDouble(st.nextToken()) * 60
-                    + Double.parseDouble(st.nextToken())) * 1000);
-            endTime = endTime >= 24*3600*1000 ? 24*3600*1000-1 : endTime;
-            int startTime = endTime-dur < 0 ? 0 : endTime-dur;
-            list.add(new Time(startTime, endTime));
+            // 종료 시간
+            int e = (int) ((Double.parseDouble(st.nextToken()) * 3600 +
+                    Double.parseDouble(st.nextToken()) * 60 +
+                    Double.parseDouble(st.nextToken())) * 1000);
+            // 1000ms간 처리하는 요청이기 때문에
+            // 시작 시간 = 시작 시간 - 999
+            int s = Math.max(e - (dur - 1) - 999, 0);
+            acc[s]++;
+            acc[e + 1]--;
         }
-
-        int ans = 0;
-        for(Time now : list) {
-            int start = now.st;
-            int end = start + 999;
-            int res = 0;
-            for(Time other : list) {
-                if(other.st <= end && other.et >= start) res++;
-            }
-            ans = Math.max(ans, res);
-
-            start = now.et;
-            end = start + 999;
-            res = 0;
-            for(Time other : list) {
-                if(other.st <= end && other.et >= start) res++;
-            }
-            ans = Math.max(ans, res);
+        // 누적합 계산
+        int answer = acc[0];
+        for (int i = 1; i < 3600 * 1000 * 24; i++) {
+            acc[i] += acc[i - 1];
+            answer = Math.max(answer, acc[i]);
         }
-
-        return ans;
-    }
-}
-
-class Time {
-    int st, et;
-
-    public Time(int st, int et) {
-        this.st = st;
-        this.et = et;
+        return answer;
     }
 }
