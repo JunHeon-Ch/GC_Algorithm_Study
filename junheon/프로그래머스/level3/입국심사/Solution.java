@@ -2,7 +2,6 @@ package 프로그래머스.level3.입국심사;
 
 import java.util.*;
 
-
 /*
 https://programmers.co.kr/learn/courses/30/lessons/43238
  * 알고리즘: 이분탐색
@@ -12,6 +11,7 @@ https://programmers.co.kr/learn/courses/30/lessons/43238
  * 최소: 0 / 최대: (n*가장 오래 걸리는 심사관의 심사 시간)
  * 시간복잡도: O(m * log(n^2)) n: 10억, m: 10만
 */
+
 class Solution {
     public long solution(int n, int[] times) {
         // 가장 오래 걸리는 심사관의 심사 시간을 찾기 위함
