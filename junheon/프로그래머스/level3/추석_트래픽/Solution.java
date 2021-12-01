@@ -2,7 +2,13 @@ package 프로그래머스.level3.추석_트래픽;
 
 import java.util.*;
 
-// 누적합 풀이
+/*
+https://programmers.co.kr/learn/courses/30/lessons/17676
+ * 알고리즘: 누적합
+ * 구간 문제는 누적합으로 풀어라
+
+ * 시간복잡도: 3600 * 1000 * 24
+ */
 class Solution {
     public int solution(String[] lines) {
         // 최대 시간으로 사이즈 설정
