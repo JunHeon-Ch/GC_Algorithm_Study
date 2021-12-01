@@ -1,21 +1,26 @@
 package 프로그래머스.level3.N으로_표현;
 
-// 시간복잡도: 4^8
+
+/*
+https://programmers.co.kr/learn/courses/30/lessons/42895
+ * 알고리즘: 완전탐색
+ * 시간복잡도: 4^8
+ */
 
 class Solution {
 
     int ans = -1;
 
     public void solve(int res, int depth, int N, int number) {
-        if(depth > 8) return;
-        if(res == number) {
-            if(ans == -1 || ans > depth) {
+        if (depth > 8) return;
+        if (res == number) {
+            if (ans == -1 || ans > depth) {
                 ans = depth;
                 return;
             }
         }
         int n = 0;
-        for(int i = 1; i <= 8; i++) {
+        for (int i = 1; i <= 8; i++) {
             n = n * 10 + N;
             solve(res + n, depth + i, N, number);
             solve(res - n, depth + i, N, number);
