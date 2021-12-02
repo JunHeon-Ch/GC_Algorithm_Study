@@ -2,7 +2,13 @@ package 프로그래머스.level3.브라이언의_고민;
 
 import java.util.*;
 
-public class Main {
+/*
+https://programmers.co.kr/learn/courses/30/lessons/1830
+* 알고리즘: 문자열
+* 미해결 문제
+ */
+
+class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
