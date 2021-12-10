@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-class Best_Solution {
+class Other_Solution {
     public int solution(int N, int number) {
         int answer = -1;
         Set<Integer>[] setArr = new Set[9];

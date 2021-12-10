@@ -2,40 +2,45 @@ package 프로그래머스.level3.가장_먼_노드;
 
 import java.util.*;
 
+/*
+https://programmers.co.kr/learn/courses/30/lessons/49189
+ * 알고리즘: BFS
+ * 시간복잡도: O(V*E) V: 2만, E: 5만 -> 10억
+ */
+
 class Solution {
     public int solution(int n, int[][] edge) {
-        LinkedList<Integer>[] edges = new LinkedList[n + 1];
-        for(int i = 1; i <= n; i++) {
-            edges[i] = new LinkedList<>();
+        // 인접리스트
+        List<Integer>[] adjList = new List[n];
+        for(int i = 0; i < n; i++) {
+            adjList[i] = new ArrayList<>();
         }
         for(int i = 0; i < edge.length; i++) {
-            int u = edge[i][0];
-            int v = edge[i][1];
-            edges[u].add(v);
-            edges[v].add(u);
+            adjList[edge[i][0] - 1].add(edge[i][1] - 1);
+            adjList[edge[i][1] - 1].add(edge[i][0] - 1);
         }
 
-        int[] d = new int[n + 1];
+        // 최단 거리 저장
+        int[] d = new int[n];
+        Arrays.fill(d, -1);
+        // BFS
         Queue<Integer> q = new LinkedList<>();
-        q.offer(1);
+        d[0] = 0;
+        q.add(0);
+        int max = 0;
         while(!q.isEmpty()) {
-            int s = q.poll();
-            for(int nn : edges[s]) {
-                if(d[nn] != 0) continue;
-                d[nn] = d[s] + 1;
-                q.offer(nn);
+            int now = q.poll();
+            for(int next : adjList[now]) {
+                if(d[next] != -1) continue;
+                q.add(next);
+                d[next] = d[now] + 1;
+                max = Math.max(max, d[next]);
             }
         }
 
-        int max = 0;
         int ans = 0;
-        for(int i = 2; i <= n; i++) {
-            if(d[i] == 0) continue;
-            if(max == d[i]) ans++;
-            else if(max < d[i]) {
-                ans = 1;
-                max = d[i];
-            }
+        for(int i = 0; i < n; i++) {
+            if(d[i] == max) ans++;
         }
         return ans;
     }
