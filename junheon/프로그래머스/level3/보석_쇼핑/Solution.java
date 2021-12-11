@@ -38,7 +38,7 @@ class Solution {
                 s++;
             }
 
-            if (map.size() == count) { // 해당 구간에 모든 보석이 포함되어 있는 경우 
+            if (map.size() == count) { // 해당 구간에 모든 보석이 포함되어 있는 경우
                 if (minLen > e - s) {
                     minLen = e - s;
                     answer[0] = s + 1;
