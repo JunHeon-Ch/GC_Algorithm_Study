@@ -6,6 +6,7 @@ import java.util.*;
 https://programmers.co.kr/learn/courses/30/lessons/17678
  * 알고리즘: 소팅, 구현
  */
+
 class Solution {
     public String solution(int n, int t, int m, String[] timetable) {
         int[] tt = new int[timetable.length];
