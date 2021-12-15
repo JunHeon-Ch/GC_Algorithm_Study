@@ -1,4 +1,4 @@
-package 프로그래머스.이중우선순위큐;
+package 프로그래머스.level3.이중우선순위큐;
 
 import java.util.*;
 
