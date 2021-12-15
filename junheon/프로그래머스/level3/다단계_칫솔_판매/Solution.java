@@ -14,7 +14,7 @@ class Solution {
     public int[] solution(String[] enroll, String[] referral, String[] seller, int[] amount) {
         // 부모 노드 저장
         Map<String, String> ancestor = new HashMap<>();
-        // 이름된 인덱스
+        // 이력된 순서
         Map<String, Integer> index = new HashMap<>();
         for(int i = 0; i < enroll.length; i++) {
             ancestor.put(enroll[i], referral[i]);
