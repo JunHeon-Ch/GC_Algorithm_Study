@@ -30,6 +30,7 @@ class Solution {
                 int nc = now.c + 100;
                 if(now.d != -1 && now.d != i) nc += 500;
                 if(!visit[nx][ny][i] || nc <= board[nx][ny]) { // 이해 안 됨
+                    // nc == board[nx][ny] 이게 왜 붙어야되지?
                     visit[nx][ny][i] = true;
                     board[nx][ny] = nc;
                     q.add(new Node(nx, ny, i, nc));
