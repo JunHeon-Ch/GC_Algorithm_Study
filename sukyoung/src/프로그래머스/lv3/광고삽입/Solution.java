@@ -25,10 +25,12 @@ class Solution {
         int adv = getSecond(adv_time);
         long max = ad[adv - 1];
         int answer = 0;
-        for(int i = adv; i < ad.length; i++){
-            if(max < ad[i] - ad[i - adv]){
-                max = ad[i] - ad[i - adv];
-                answer = i - adv + 1;
+        for (int i = 0; i + adv <= play; i++) {
+            long tmp = ad[i + adv] - ad[i];
+
+            if (tmp > max) {
+                max = tmp;
+                answer = i + 1;
             }
         }
         return String.format("%02d:%02d:%02d", answer / 3600, (answer % 3600) / 60, (answer % 3600) % 60);
