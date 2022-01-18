@@ -25,7 +25,7 @@ class Solution {
     public boolean possible(int[] stones, int k, int n) {
         int cnt = 0;
         for(int s : stones) {
-            if(s - n >= 0) cnt = 0;
+            if(n <= s) cnt = 0;
             else cnt++;
             if(cnt == k) return false;
         }
