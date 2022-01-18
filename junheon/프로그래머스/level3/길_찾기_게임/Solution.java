@@ -5,7 +5,7 @@ import java.util.*;
 /*
 https://programmers.co.kr/learn/courses/30/lessons/42892
  * 알고리즘: 트리
- * 시간복잡도: O(n*logn + n*m) = O(n*logn), n=10,000(nodeinfo 배열 길이), m=1,000(트리 깊이)
+ * 시간복잡도: O(n*logn + n*m) = O(n*m), n=10,000(nodeinfo 배열 길이), m=1,000(트리 깊이)
                 nlogn: 정렬, n*m: 트리 생성
  */
 
@@ -22,7 +22,7 @@ class Solution {
         for (int[] info : nodeinfo) {
             node[idx++] = new Node(idx, info[0], info[1]);
         }
-        // y가 작은 순서, x가 큰 순서
+        // y가 큰 순서, x가 작은 순서
         Arrays.sort(node, (n1, n2) -> {
             if (n1.y == n2.y) return n1.x - n2.x;
             return n2.y - n1.y;
@@ -49,7 +49,7 @@ class Solution {
     // min -> 추가할 노드의 x의 최소값
     // max -> 추가할 노드의 x의 최대값
     public void makeTree(int i, int parent, int min, int max) {
-        if (node[i].x > min && node[i].x < node[parent].x) { // 왼쪽 서브 트리
+        if (min < node[i].x && node[i].x < node[parent].x) { // 왼쪽 서브 트리
             if (node[parent].left == -1) { // 비어 있을 경우
                 node[parent].left = i;
                 return;
