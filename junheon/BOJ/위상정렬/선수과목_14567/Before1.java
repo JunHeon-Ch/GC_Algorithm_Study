@@ -10,7 +10,7 @@ https://www.acmicpc.net/problem/14567
  * 시간복잡도:
  */
 
-public class Before_Main {
+public class Before1 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

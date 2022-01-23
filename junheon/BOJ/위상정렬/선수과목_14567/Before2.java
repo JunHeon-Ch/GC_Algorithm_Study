@@ -9,7 +9,7 @@ https://www.acmicpc.net/problem/14567
  * 시간복잡도: O(V+E), V=1,000(과목의 수 N), E=500,000(선수 조건의 수)
  */
 
-public class Main {
+public class Before2 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -31,24 +31,33 @@ public class Main {
 
         Queue<Integer> queue = new LinkedList<>();
         int[] ans = new int[n];
-        for (int i = 0; i < n; i++) {
-            if (inDegree[i] == 0) {
+        int res = 1;
+        for(int i = 0; i < n; i++) {
+            if(inDegree[i] == 0) {
                 queue.add(i);
-                ans[i] = 1;
+                ans[i] = res;
             }
         }
-        while (!queue.isEmpty()) {
-            int u = queue.poll();
-            for (int v : dag[u]) {
-                if (--inDegree[v] == 0) {
-                    ans[v] = ans[u] + 1;
-                    queue.add(v);
+        res++;
+        int cnt = queue.size();
+        while(cnt < n) {
+            Queue<Integer> tmpQ = new LinkedList<>();
+            while(!queue.isEmpty()) {
+                int u = queue.poll();
+                for(int v : dag[u]) {
+                    if(--inDegree[v] == 0) {
+                        tmpQ.add(v);
+                        ans[v] = res;
+                    }
                 }
             }
+            queue.addAll(tmpQ);
+            cnt += tmpQ.size();
+            res++;
         }
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        for (int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++) {
             bw.write(ans[i] + " ");
         }
         bw.flush();
