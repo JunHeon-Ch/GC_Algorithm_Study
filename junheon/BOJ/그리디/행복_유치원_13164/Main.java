@@ -8,10 +8,10 @@ import java.util.StringTokenizer;
 
 /*
 https://www.acmicpc.net/problem/13164
- * 풀이: https://c-king.tistory.com/258
-    1. 1과 3, 3과 5, 5와 6, 6과 10의 차이를 diff배열에 넣는다.
-    2. 이것들을 오름차순하여 index가 [ 0, N-K ) 까지 더한다.
  * 알고리즘: 그리디
+ * 풀이: https://c-king.tistory.com/258
+    1. arr[0]과 arr[1], arr[1]과 arr[2], ..., arr[n - 2]과 arr[n - 1]의 차이를 diff 배열에 넣는다.
+    2. diff 배열을 오름차순하여 [0, N-K)까지 더한다.
  * 시간복잡도: O(nlogn), n=300,000(원생의 수)
  */
 
