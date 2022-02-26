@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 /*
 https://www.acmicpc.net/problem/2812
- * 알고리즘: 스택
+ * 알고리즘: 그리디(스택)
  * 시간복잡도:O(n+k), n=500,000(자리수), k=500,000(지워야 할 숫자의 개수), k < n
  */
 
