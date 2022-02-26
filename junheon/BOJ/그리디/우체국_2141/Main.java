@@ -1,4 +1,4 @@
-package BOJ.그리디.아파트_2141;
+package BOJ.그리디.우체국_2141;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.*;
 
 /*
 https://www.acmicpc.net/problem/2141
- * 알고리즘: 그리디문제지만 누적합으로 품
+ * 알고리즘: 그리디(누적합)
  * 시간복잡도: O(nlogn), n=100,000(마을 수)
  */
 
