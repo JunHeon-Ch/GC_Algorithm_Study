@@ -1,4 +1,4 @@
-package PS_2022.BOJ.자료구조.탑_2493;
+package PS_2022.BOJ.스택.탑_2493;
 
 import java.io.BufferedReader;
 import java.io.IOException;

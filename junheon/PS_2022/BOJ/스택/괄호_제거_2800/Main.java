@@ -1,4 +1,4 @@
-package PS_2022.BOJ.자료구조.괄호_제거_2800;
+package PS_2022.BOJ.스택.괄호_제거_2800;
 
 import java.io.BufferedReader;
 import java.io.IOException;

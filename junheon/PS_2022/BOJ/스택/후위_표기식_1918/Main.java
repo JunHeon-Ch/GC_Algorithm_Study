@@ -1,4 +1,4 @@
-package PS_2022.BOJ.자료구조.후위_표기식_1918;
+package PS_2022.BOJ.스택.후위_표기식_1918;
 
 import java.io.BufferedReader;
 import java.io.IOException;

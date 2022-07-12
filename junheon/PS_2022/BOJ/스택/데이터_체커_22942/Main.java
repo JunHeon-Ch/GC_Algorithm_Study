@@ -1,4 +1,4 @@
-package PS_2022.BOJ.자료구조.데이터_체커_22942;
+package PS_2022.BOJ.스택.데이터_체커_22942;
 
 import java.io.BufferedReader;
 import java.io.IOException;
