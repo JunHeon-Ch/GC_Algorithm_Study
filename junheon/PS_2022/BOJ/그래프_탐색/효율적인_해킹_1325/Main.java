@@ -7,6 +7,8 @@ import java.util.*;
 
 /*
 https://www.acmicpc.net/problem/1325
+ * 알고리즘: BFS
+ * 시간복잡도: O(nm), n=100,000, m=1,000,000
  */
 
 public class Main {
