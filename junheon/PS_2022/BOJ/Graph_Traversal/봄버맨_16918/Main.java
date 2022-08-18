@@ -1,4 +1,4 @@
-package PS_2022.BOJ.그래프_탐색.봄버맨_16918;
+package PS_2022.BOJ.Graph_Traversal.봄버맨_16918;
 
 import java.io.BufferedReader;
 import java.io.IOException;

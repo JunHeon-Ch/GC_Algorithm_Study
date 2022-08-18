@@ -1,4 +1,4 @@
-package PS_2022.BOJ.그래프_탐색.효율적인_해킹_1325;
+package PS_2022.BOJ.Graph_Traversal.효율적인_해킹_1325;
 
 import java.io.BufferedReader;
 import java.io.IOException;

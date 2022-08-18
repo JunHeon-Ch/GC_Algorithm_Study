@@ -1,4 +1,4 @@
-package PS_2022.BOJ.그래프_탐색.미로_탐색_2178;
+package PS_2022.BOJ.Graph_Traversal.미로_탐색_2178;
 
 import java.io.BufferedReader;
 import java.io.IOException;

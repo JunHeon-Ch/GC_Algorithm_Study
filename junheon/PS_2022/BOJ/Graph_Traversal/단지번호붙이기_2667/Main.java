@@ -1,4 +1,4 @@
-package PS_2022.BOJ.그래프_탐색.단지번호붙이기_2667;
+package PS_2022.BOJ.Graph_Traversal.단지번호붙이기_2667;
 
 import java.io.BufferedReader;
 import java.io.IOException;
