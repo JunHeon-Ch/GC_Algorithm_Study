@@ -1,4 +1,4 @@
-package PS_2022.BOJ.Prefix_Sum.수들의_합_2015;
+package PS_2022.BOJ.Prefix_Sum.수들의_합4_2015;
 
 import java.io.BufferedReader;
 import java.io.IOException;
