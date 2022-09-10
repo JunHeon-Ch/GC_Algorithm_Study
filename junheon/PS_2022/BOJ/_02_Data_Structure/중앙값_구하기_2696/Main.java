@@ -1,4 +1,4 @@
-package PS_2022.BOJ._02_Queue.중앙값_구하기_2696;
+package PS_2022.BOJ._02_Data_Structure.중앙값_구하기_2696;
 
 import java.io.*;
 import java.util.PriorityQueue;

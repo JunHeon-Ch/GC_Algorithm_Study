@@ -1,4 +1,4 @@
-package PS_2022.BOJ._02_Queue.이중_우선순위_큐_7662;
+package PS_2022.BOJ._02_Data_Structure.이중_우선순위_큐_7662;
 
 import java.io.*;
 import java.util.*;

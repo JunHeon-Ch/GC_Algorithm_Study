@@ -1,4 +1,4 @@
-package PS_2022.BOJ._02_Queue.문제_추천_시스템_v1_21939;
+package PS_2022.BOJ._02_Data_Structure.문제_추천_시스템_v1_21939;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package PS_2022.BOJ._01_Stack.괄호의_값_2504;
+package PS_2022.BOJ._01_Data_Structure.괄호의_값_2504;
 
 import java.io.BufferedReader;
 import java.io.IOException;

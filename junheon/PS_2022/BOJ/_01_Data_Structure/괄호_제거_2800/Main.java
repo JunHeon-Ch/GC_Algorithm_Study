@@ -1,4 +1,4 @@
-package PS_2022.BOJ._01_Stack.괄호_제거_2800;
+package PS_2022.BOJ._01_Data_Structure.괄호_제거_2800;
 
 import java.io.BufferedReader;
 import java.io.IOException;
