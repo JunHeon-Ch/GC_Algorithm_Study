@@ -7,6 +7,12 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
+/*
+https://www.acmicpc.net/problem/5430
+ * 알고리즘: 덱
+ * 시간복잡도: O(n), n=100,000(수행할 함수 수)
+ */
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
